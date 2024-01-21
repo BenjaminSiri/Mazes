@@ -10,7 +10,9 @@ int main(int argc, char* argv[]){
 	Maze *myMaze = readFromFile(argv[1]);
 	writeInit(myMaze);
 	
-	customAlgo(myMaze);
+	if(customAlgo(myMaze)){
+		printf("FOUND\n");
+	}
 
 	return 0;
 }
