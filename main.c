@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "graphics.h"
-#include "maze-algo.h"
+#include "mazeAlgo.c"
 
 int main(int argc, char* argv[]){
 	Maze *myMaze = readFromFile(argv[1]);
